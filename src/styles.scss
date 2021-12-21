@@ -1,7 +1,7 @@
 /**
 * Generated theme by Material Theme Generator
 * https://materialtheme.arcsine.dev
-* Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48IzYwN2Q4YiIsIj9lcjwjY2ZkOGRjIiwiO2VyPCM0NDYwNmV$LCIlPmBePCM3YTRiY2UiLCI~ZXI8I2Q3YzlmMCIsIjtlcjwjNWQzM2Jjfiwid2Fybj5gXjwjZGUxNDE0IiwiP2VyPCNmNWI5YjkiLCI7ZXI8I2QxMGIwYn4sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZmFmYWZhIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00IiwiZmFtaWx5PE1hdGUgU0N$LGBAPCgtMyIsImZhbWlseTxRdWlja3NhbmR$LGBAPCgtMiIsImZhbWlseTxRdWlja3NhbmR$LGBAPCgtMSIsImZhbWlseTxRdWlja3NhbmR$LGBAPGhlYWRsaW5lIiwiZmFtaWx5PENpbnplbCIsInZhcmlhbnQ8bWVkaXVtfixgQDx0aXRsZSIsImZhbWlseTxDaW56ZWx$LGBAPHN1YiktMiIsImZhbWlseTxSb2JvdG8gU2xhYiIsInZhcmlhbnQ8bWVkaXVtIiwibGluZUhlaWdodD4zOH0sYEA8c3ViKS0xIiwiZmFtaWx5PFJvYm90byBTbGFiIiwidmFyaWFudDxyZWd1bGFyIiwic2l6ZT4xMn0sYEA8Ym9keS0yfixgQDxib2R5LTF$LGBAPGJ1dHRvbn4sYEA8Y2FwdGlvbn4sYEA8aW5wdXQiLCJzaXplPm51bGx9XSwiaWNvbnM8RmlsbGVkIiwiP25lc3M$ZmFsc2UsInZlcnNpb24$MTN9
+* Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48I2Y1ZjZmNyIsIj9lcjwjZmNmY2ZkIiwiO2VyPCNmMGYyZjN$LCIlPmBePCM3YTRiY2UiLCI~ZXI8I2Q3YzlmMCIsIjtlcjwjNWQzM2Jjfiwid2Fybj5gXjwjZGUxNDE0IiwiP2VyPCNmNWI5YjkiLCI7ZXI8I2QxMGIwYn4sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZmFmYWZhIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00IiwiZmFtaWx5PE1hdGUgU0N$LGBAPCgtMyIsImZhbWlseTxRdWlja3NhbmR$LGBAPCgtMiIsImZhbWlseTxRdWlja3NhbmR$LGBAPCgtMSIsImZhbWlseTxRdWlja3NhbmR$LGBAPGhlYWRsaW5lIiwiZmFtaWx5PENpbnplbCIsInZhcmlhbnQ8bWVkaXVtfixgQDx0aXRsZSIsImZhbWlseTxDaW56ZWx$LGBAPHN1YiktMiIsImZhbWlseTxSb2JvdG8gU2xhYiIsInZhcmlhbnQ8bWVkaXVtIiwibGluZUhlaWdodD4zOH0sYEA8c3ViKS0xIiwiZmFtaWx5PFJvYm90byBTbGFiIiwidmFyaWFudDxyZWd1bGFyIiwic2l6ZT4xMn0sYEA8Ym9keS0yfixgQDxib2R5LTF$LGBAPGJ1dHRvbn4sYEA8Y2FwdGlvbn4sYEA8aW5wdXQiLCJzaXplPm51bGx9XSwiaWNvbnM8RmlsbGVkIiwiP25lc3M$ZmFsc2UsInZlcnNpb24$MTN9
 */
 
 @use '@angular/material' as mat;
@@ -22,8 +22,8 @@ $fontConfig: (
   display-3: mat.define-typography-level(56px, 56px, 400, 'Quicksand', -0.0089em),
   display-2: mat.define-typography-level(45px, 48px, 400, 'Quicksand', 0.0000em),
   display-1: mat.define-typography-level(34px, 40px, 400, 'Quicksand', 0.0074em),
-  headline: mat.define-typography-level(24px, 32px, 500, 'Cinzel', 0.0000em),
-  title: mat.define-typography-level(20px, 32px, 500, 'Cinzel', 0.0075em),
+  headline: mat.define-typography-level(32px, 32px, 800, 'Mate SC', 0.0000em),
+  title: mat.define-typography-level(18px, 20px, 500, 'Cinzel', 0.0075em),
   subheading-2: mat.define-typography-level(16px, 38px, 500, 'Roboto Slab', 0.0094em),
   subheading-1: mat.define-typography-level(12px, 24px, 400, 'Roboto Slab', 0.0083em),
   body-2: mat.define-typography-level(14px, 24px, 500, 'Roboto', 0.0179em),
@@ -104,7 +104,7 @@ $dark-bg-alpha-12:    rgba(#2c2c2c, 0.12);
 $mat-light-theme-background: (
   background:               $light-background,
   status-bar:               $light-bg-darker-20,
-  app-bar:                  $light-bg-darker-5,
+  app-bar:                  $light-background,
   hover:                    $dark-bg-alpha-4,
   card:                     $light-bg-lighter-5,
   dialog:                   $light-bg-lighter-5,
@@ -153,22 +153,22 @@ $mat-dark-theme-background: (
 // Theme Config
 
 body {
-  --primary-color: #607d8b;
-  --primary-lighter-color: #cfd8dc;
-  --primary-darker-color: #44606e;
-  --text-primary-color: #{$light-primary-text};
+  --primary-color: #86a4c2;
+  --primary-lighter-color: #dbe4ed;
+  --primary-darker-color: #6989ac;
+  --text-primary-color: #{$dark-primary-text};
   --text-primary-lighter-color: #{$dark-primary-text};
-  --text-primary-darker-color: #{$light-primary-text};
+  --text-primary-darker-color: #{$dark-primary-text};
 }
 $mat-primary: (
-  main: #607d8b,
-  lighter: #cfd8dc,
-  darker: #44606e,
-  200: #607d8b, // For slide toggle,
+  main: #86a4c2,
+  lighter: #dbe4ed,
+  darker: #6989ac,
+  200: #86a4c2, // For slide toggle,
   contrast : (
-    main: $light-primary-text,
+    main: $dark-primary-text,
     lighter: $dark-primary-text,
-    darker: $light-primary-text,
+    darker: $dark-primary-text,
   )
 );
 $theme-primary: mat.define-palette($mat-primary, main, lighter, darker);
@@ -222,17 +222,17 @@ $theme: (
   primary: $theme-primary,
   accent: $theme-accent,
   warn: $theme-warn,
-  is-dark: true,
-  foreground: $mat-dark-theme-foreground,
-  background: $mat-dark-theme-background,
+  is-dark: false,
+  foreground: $mat-light-theme-foreground,
+  background: $mat-light-theme-background,
 );
 $altTheme: (
   primary: $theme-primary,
   accent: $theme-accent,
   warn: $theme-warn,
-  is-dark: false,
-  foreground: $mat-light-theme-foreground,
-  background: $mat-light-theme-background,
+  is-dark: true,
+  foreground: $mat-dark-theme-foreground,
+  background: $mat-dark-theme-background,
 );
 
 // Theme Init
@@ -263,4 +263,11 @@ $altTheme: (
   .mat-badge-content {
     font-family: 'Roboto';
   }
+}
+
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
