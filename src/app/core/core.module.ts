@@ -1,22 +1,31 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { HeaderComponent } from './components/header/header.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
-
+import { HeroComponent } from './components/hero/hero.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    HeroComponent,
+    AboutComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
-    MatToolbarModule,
-    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    HeroComponent,
+    AboutComponent,
+    ContactComponent,
+    FooterComponent
   ]
 })
 export class CoreModule {
