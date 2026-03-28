@@ -1,10 +1,6 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
-
 
 @NgModule({
   declarations: [
@@ -12,8 +8,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   imports: [
     CommonModule,
-    MatToolbarModule,
-    FlexLayoutModule,
   ],
   exports: [
     HeaderComponent
