@@ -1,49 +1,81 @@
-<section id="about" class="section about-section" fxLayout="column" fxLayoutAlign="center center">
-  <div class="section-inner" fxLayout="column" fxLayoutGap="20px">
-    <h2 class="mat-display-1 section-heading">Hey, I'm Ruan.</h2>
-    <p class="body-text">
-      I build things for the web. I've been writing code since I was old enough
-      to type, and somewhere along the way it stopped being a hobby and started
-      paying rent.
-    </p>
-    <p class="body-text">
-      Most of my time goes into front end work, though I'm happiest when I can
-      touch the full stack. I like clean code, but I like shipping more. If
-      something works well and reads well, I'm satisfied.
-    </p>
-    <p class="body-text">
-      When I'm not coding, you'll probably find me outdoors or knee-deep in
-      some rabbit hole I found on the internet at 2am.
+<section id="about" class="hero">
+  <div class="container">
+    <p class="hero-label" #animateIn>Front End Developer</p>
+    <h1 class="hero-heading" #animateIn>
+      I'm Ruan Heyns.<br>
+      I build things for the web.
+    </h1>
+    <p class="hero-body" #animateIn>
+      Coding since I was old enough to type. Somewhere along the way it stopped being
+      a hobby and started paying rent. I like clean code, but I like shipping more.
     </p>
   </div>
 </section>
 
-<section id="work" class="section work-section" fxLayout="column" fxLayoutAlign="center center">
-  <div class="section-inner" fxLayout="column" fxLayoutGap="20px">
-    <h2 class="mat-display-1 section-heading">What I do</h2>
-    <p class="body-text">
-      I've worked on everything from scrappy side projects to production apps
-      with actual users who file actual bug reports. Angular is my go-to, but
-      I'll pick up whatever the project needs.
-    </p>
-    <p class="body-text">
-      I care about the details that most people don't notice, the ones that
-      make software feel good instead of just functional. Smooth animations,
-      sensible layouts, fast load times. The stuff you only appreciate when
-      it's missing.
-    </p>
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <div class="section-label" #animateIn>
+      <span class="label-number">01</span>
+      <h2 class="label-text">Skills</h2>
+    </div>
+    <div class="skills-grid" #animateIn>
+      <div
+        class="skill-item"
+        *ngFor="let skill of skills; let i = index"
+        [style.--i]="i"
+      >
+        <span class="skill-name">{{ skill.name }}</span>
+        <span class="skill-level" [class.primary]="skill.level === 'Primary'">{{ skill.level }}</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="contact" class="section contact-section" fxLayout="column" fxLayoutAlign="center center">
-  <div class="section-inner" fxLayout="column" fxLayoutGap="20px">
-    <h2 class="mat-display-1 section-heading">Say hello</h2>
-    <p class="body-text">
-      I'm always open to interesting conversations and new projects. If you've
-      got something in mind, or just want to talk shop, drop me a line.
-    </p>
-    <p class="body-text contact-email">
-      <a href="mailto:hello@ruanheyns.com">hello@ruanheyns.com</a>
-    </p>
+<section id="work" class="section work-section">
+  <div class="container">
+    <div class="section-label" #animateIn>
+      <span class="label-number">02</span>
+      <h2 class="label-text">Work</h2>
+    </div>
+    <div class="work-content" #animateIn>
+      <p class="lead-text">
+        From scrappy side projects to production apps with real users who file
+        real bug reports.
+      </p>
+      <p class="body-text">
+        Angular is my go-to, but I'll reach for whatever the project needs.
+        I care about the details most people don't notice: smooth animations,
+        sensible layouts, fast load times. The stuff you only appreciate when
+        it's missing.
+      </p>
+      <p class="body-text">
+        Most of my time goes into front end work, though I'm happiest when I can
+        touch the full stack. If something works well and reads well, I'm satisfied.
+      </p>
+    </div>
   </div>
 </section>
+
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-label" #animateIn>
+      <span class="label-number">03</span>
+      <h2 class="label-text">Contact</h2>
+    </div>
+    <div class="contact-content" #animateIn>
+      <p class="lead-text">
+        Open to interesting conversations and new projects.
+      </p>
+      <a href="mailto:hello@ruanheyns.com" class="contact-link">
+        hello@ruanheyns.com
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-text">&copy; {{ currentYear }} Ruan Heyns</p>
+  </div>
+</footer>

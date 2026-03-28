@@ -1,13 +1,14 @@
-<mat-toolbar>
-  <mat-toolbar-row fxHide.lt-md>
-    <div class="name-title" fxFill fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
-      <p class="mat-title">Since 1994</p>
-      <p class="mat-headline">Ruan Heyns</p>
-    </div>
-  </mat-toolbar-row>
-  <mat-toolbar-row class="content-list" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="24px">
-    <a class="nav-link" href="#about">About</a>
-    <a class="nav-link" href="#work">Work</a>
-    <a class="nav-link" href="#contact">Get in touch</a>
-  </mat-toolbar-row>
-</mat-toolbar>
+<header class="site-header" [class.scrolled]="scrolled">
+  <div class="header-inner">
+    <a href="#about" class="header-name">Ruan Heyns</a>
+    <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen" aria-label="Toggle navigation">
+      <span class="bar" [class.open]="menuOpen"></span>
+    </button>
+    <nav class="nav-links" [class.open]="menuOpen">
+      <a href="#about" class="nav-link" (click)="closeMenu()">About</a>
+      <a href="#skills" class="nav-link" (click)="closeMenu()">Skills</a>
+      <a href="#work" class="nav-link" (click)="closeMenu()">Work</a>
+      <a href="#contact" class="nav-link" (click)="closeMenu()">Contact</a>
+    </nav>
+  </div>
+</header>
