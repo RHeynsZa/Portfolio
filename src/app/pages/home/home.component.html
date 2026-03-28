@@ -1,13 +1,15 @@
 <section id="about" class="hero">
   <div class="container">
-    <p class="hero-label" #animateIn>Front End Developer</p>
+    <p class="hero-label" #animateIn>Full-Stack Engineer</p>
     <h1 class="hero-heading" #animateIn>
       I'm Ruan Heyns.<br>
-      I build things for the web.
+      I build systems that scale.
     </h1>
     <p class="hero-body" #animateIn>
-      Coding since I was old enough to type. Somewhere along the way it stopped being
-      a hobby and started paying rent. I like clean code, but I like shipping more.
+      7+ years across FinTech, MedTech, energy, and agriculture.
+      Microservices in Go and Python, Kubernetes clusters, React portals
+      rendering millions of data points. I work wherever the problem is,
+      backend or frontend or the infra in between.
     </p>
   </div>
 </section>
@@ -24,8 +26,7 @@
         *ngFor="let skill of skills; let i = index"
         [style.--i]="i"
       >
-        <span class="skill-name">{{ skill.name }}</span>
-        <span class="skill-level" [class.primary]="skill.level === 'Primary'">{{ skill.level }}</span>
+        <span class="skill-name">{{ skill }}</span>
       </div>
     </div>
   </div>
@@ -39,18 +40,21 @@
     </div>
     <div class="work-content" #animateIn>
       <p class="lead-text">
-        From scrappy side projects to production apps with real users who file
-        real bug reports.
+        I've been the sole dev on a prototype and the architect on systems
+        ingesting live sensor data from 1,000+ buildings. Mostly the stuff
+        in between.
       </p>
       <p class="body-text">
-        Angular is my go-to, but I'll reach for whatever the project needs.
-        I care about the details most people don't notice: smooth animations,
-        sensible layouts, fast load times. The stuff you only appreciate when
-        it's missing.
+        Currently at Utilifeed in Gothenburg. Kafka event pipelines, a
+        Python/Go backend, and a React portal for district heating data
+        that I own the roadmap for. Migrated a 4TB database off AWS RDS.
+        Also the company's DPO, because someone had to handle GDPR.
       </p>
       <p class="body-text">
-        Most of my time goes into front end work, though I'm happiest when I can
-        touch the full stack. If something works well and reads well, I'm satisfied.
+        Before Sweden: commercial loan systems at Investec, a telehealth
+        feature shipped in a month during COVID at GoodX, and sole
+        developer on an agricultural field trial app built on .NET and
+        Azure. I like owning problems end to end.
       </p>
     </div>
   </div>
@@ -64,10 +68,10 @@
     </div>
     <div class="contact-content" #animateIn>
       <p class="lead-text">
-        Open to interesting conversations and new projects.
+        Got something interesting? I'd like to hear about it.
       </p>
-      <a href="mailto:hello@ruanheyns.com" class="contact-link">
-        hello@ruanheyns.com
+      <a href="mailto:rheynsza@gmail.com" class="contact-link">
+        rheynsza@gmail.com
         <span class="arrow">&rarr;</span>
       </a>
     </div>

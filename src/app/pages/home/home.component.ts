@@ -11,18 +11,10 @@ export class HomeComponent implements AfterViewInit {
   currentYear = new Date().getFullYear();
 
   skills = [
-    { name: 'Angular', level: 'Primary' },
-    { name: 'TypeScript', level: 'Primary' },
-    { name: 'JavaScript', level: 'Primary' },
-    { name: 'HTML & CSS', level: 'Primary' },
-    { name: 'SCSS / Sass', level: 'Primary' },
-    { name: 'RxJS', level: 'Primary' },
-    { name: 'React', level: 'Secondary' },
-    { name: 'Node.js', level: 'Secondary' },
-    { name: 'REST APIs', level: 'Secondary' },
-    { name: 'Git', level: 'Secondary' },
-    { name: 'Responsive Design', level: 'Secondary' },
-    { name: 'Impeccable', level: 'Secondary' },
+    'Python', 'Golang', 'TypeScript', 'JavaScript', 'C#', 'SQL', 'C++',
+    'React', 'Angular', '.NET Core', 'Express.js', 'Apache Kafka',
+    'Kubernetes', 'AWS', 'Terraform', 'Docker', 'Grafana',
+    'PostgreSQL', 'Linux', 'Git',
   ];
 
   ngAfterViewInit() {
