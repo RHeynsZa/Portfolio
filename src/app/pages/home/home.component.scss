@@ -1,0 +1,33 @@
+.section {
+  min-height: 60vh;
+  padding: 80px 24px;
+  box-sizing: border-box;
+}
+
+.section-inner {
+  max-width: 640px;
+  width: 100%;
+}
+
+.section-heading {
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.body-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.72);
+  margin: 0;
+}
+
+.contact-email a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
